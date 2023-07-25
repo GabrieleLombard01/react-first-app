@@ -2,7 +2,11 @@ import NavBar from "./components/AppNavBar";
 
 function App() {
 	return (
-    <NavBar/>
+    <>
+      <NavBar/>
+      <h1>Cosa desideri mangiare?</h1>
+      <hr/>
+    </>
 	);
 }
 
