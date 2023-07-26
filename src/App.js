@@ -12,6 +12,13 @@ class App extends Component {
         <hr/>
         <div className="row">
           <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
       </div>
     </>
