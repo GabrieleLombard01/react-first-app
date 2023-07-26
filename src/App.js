@@ -1,7 +1,9 @@
+import React, {Component} from 'react';
 import NavBar from "./components/AppNavBar";
 import Card from './components/AppCards';
 
-function App() {
+class App extends Component {
+  render(){
 	return (
     <>
       <NavBar/>
@@ -14,6 +16,7 @@ function App() {
       </div>
     </>
 	);
+ }
 }
 
 export default App;
