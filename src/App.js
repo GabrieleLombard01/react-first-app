@@ -29,9 +29,7 @@ class App extends Component {
         {this.state.cards.map(card => (
 						<Card
 							key={card.id}
-							name={card.name}
-							price={card.price}
-							figure={card.figure} />
+							card={card} /> 
 					))}
         </div>
       </div>
