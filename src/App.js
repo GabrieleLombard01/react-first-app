@@ -26,30 +26,13 @@ class App extends Component {
         <h1 className="text-center fw-bold fs-3 pt-2">Cosa desideri mangiare?</h1>
         <hr/>
         <div className="row mx-auto">
-          <Card
-          figure={california}
-          name="California"
-          price={1.99}/>
-          <Card
-          figure={dragon}
-          name="Dragon"
-          price={1.00}/>
-          <Card
-          figure={dynamite}
-          name="Dynamite"
-          price={1.50}/>
-          <Card
-          figure={philadelphia}
-          name="Philadelphia"
-          price={2.99}/>
-          <Card
-          figure={rainbow}
-          name="Rainbow"
-          price={0.99}/>
-          <Card
-          figure={shrimp}
-          name="Shrimp"
-          price={1.25}/>
+        {this.state.cards.map(card => (
+						<Card
+							key={card.id}
+							name={card.name}
+							price={card.price}
+							figure={card.figure} />
+					))}
         </div>
       </div>
     </>
