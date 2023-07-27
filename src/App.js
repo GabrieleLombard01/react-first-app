@@ -9,6 +9,15 @@ import rainbow from './images/rainbow.png';
 import shrimp from './images/shrimp.png';
 
 class App extends Component {
+  state = {cards: [
+    {id: 0,name: "California",price: 1.99,figure: california},
+    {id: 1,name: "Dragon",price: 1.00,figure: dragon},
+    {id: 2,name: "Dynamite",price: 1.50,figure: dynamite},
+    {id: 3,name: "Philadelphia",price: 2.99,figure: philadelphia},
+    {id: 4,name: "Rainbow",price: 0.99,figure: rainbow},
+    {id: 5,name: "Shrimp",price: 1.25,figure: shrimp},
+   ]
+  }
   render(){
 	return (
     <>
